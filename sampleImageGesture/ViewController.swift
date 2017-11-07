@@ -20,73 +20,70 @@ class ViewController: UIViewController {
               title: "フルーツ"
             , message: "フルーツって、なんか可愛いよね。", preferredStyle: .alert
         )
-        alert.addAction(UIAlertAction(
-              title: "OK"
-            , style: .default
-            , handler: {action in print("フルーツが押されました")}
-        ))
         present(
               alert
             , animated: true
-            , completion: {() -> Void in print("フルーツを触ろうとしています。")
-            }
+            , completion: {() -> Void in print("フルーツが表示されました。")}
         )
+        alert.addAction(UIAlertAction(
+              title: "OK"
+            , style: .default
+            ,handler: {action in print("フルーツのOKが押されました。")}
+        ))
     }
     
     @IBAction func myImagepinappul(_ sender: UILongPressGestureRecognizer) {
         let alert = UIAlertController(
               title: "パイナップル"
-            , message: "そんなに押して、痛くないの？？"
+            , message: "そんなに触って、痛くないの？？"
             , preferredStyle: .alert
+        )
+        present(
+              alert
+            , animated: true
+            , completion: {() -> Void in print("パイナップルが表示されました。")}
         )
         alert.addAction(UIAlertAction(
               title: "OK"
             , style: .default
-            , handler: {action in print("パイナップルが押されました")
-            }
+            ,handler: {action in print("パイナップルのOKが押されました。")}
         ))
-        present(
-              alert
-            , animated: true
-            , completion: {() -> Void in print("パイナップルが表示されました。")
-            }
-        )
     }
     
     @IBAction func myImageBudo(_ sender: UIRotationGestureRecognizer) {
         let alert = UIAlertController(
               title: "ブドウ"
-            , message: "ブドウを、バラバラにしないでください。"
+            , message: "乱暴しないで！バラバラになっちゃう！"
             , preferredStyle: .alert
         )
-        alert.addAction(UIAlertAction(
-              title: "OK"
-            , style: .default
-            , handler: {action in print("ブドウが押されました")}
-        ))
         present(
               alert
             , animated: true
             , completion: {() -> Void in print("ブドウが表示されました。")}
         )
+        alert.addAction(UIAlertAction(
+              title: "OK"
+            , style: .default
+            ,handler: {action in print("ブドウのOKが押されました。")}
+        ))
     }
     
     @IBAction func myImageapple(_ sender: UIPanGestureRecognizer) {
         let alert = UIAlertController(
               title: "リンゴ"
-            , message: "リンゴの表面って、微妙に毛羽立ってて良いよね。"
+            , message: "リンゴの表面って、微妙に毛羽立ってて気持ちいいよね。"
             , preferredStyle: .alert
         )
-        alert.addAction(UIAlertAction(
-            title: "OK"
-            ,style: .default
-            , handler: {action in print("OKが押されました")}
-        ))
         present(
-              alert
+             alert
             , animated: true
             , completion: {() -> Void in print("アップルが表示されました。")}
         )
+        alert.addAction(UIAlertAction(
+             title: "OK"
+            ,style: .default
+            ,handler: {action in print("アップルのOKが押されました。")}
+        ))
     }
     
     override func didReceiveMemoryWarning() {
@@ -95,4 +92,3 @@ class ViewController: UIViewController {
     }
     
 }
-

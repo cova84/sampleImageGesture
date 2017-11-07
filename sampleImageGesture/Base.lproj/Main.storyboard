@@ -32,7 +32,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="3M1-fH-JWn" appends="YES" id="g7B-RV-3hB"/>
-                                    <outletCollection property="gestureRecognizers" destination="UzM-5g-5my" appends="YES" id="nk2-wR-wI5"/>
+                                    <outletCollection property="gestureRecognizers" destination="UzM-5g-5my" appends="YES" id="qQB-jv-gUX"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLu-NW-VeI">
@@ -41,7 +41,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="UJo-hH-D1M" appends="YES" id="Qt2-6Y-EOS"/>
-                                    <outletCollection property="gestureRecognizers" destination="LAQ-21-cM4" appends="YES" id="vhi-ni-cZx"/>
+                                    <outletCollection property="gestureRecognizers" destination="LAQ-21-cM4" appends="YES" id="iGl-Gy-9Q5"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHV-Mx-9pd">
@@ -50,7 +50,7 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="yfV-K6-eh1" appends="YES" id="k1h-Pl-MLX"/>
-                                    <outletCollection property="gestureRecognizers" destination="w6u-mO-G2p" appends="YES" id="MS8-2b-i3p"/>
+                                    <outletCollection property="gestureRecognizers" destination="w6u-mO-G2p" appends="YES" id="gsZ-lv-pXb"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -97,9 +97,9 @@
                         <action selector="myImageBack:" destination="BYZ-38-t0r" id="FZq-ar-ZTV"/>
                     </connections>
                 </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="w6u-mO-G2p"/>
                 <pinchGestureRecognizer id="LAQ-21-cM4"/>
                 <gestureRecognizer id="UzM-5g-5my"/>
-                <swipeGestureRecognizer direction="right" id="w6u-mO-G2p"/>
             </objects>
             <point key="canvasLocation" x="135" y="132.04225352112675"/>
         </scene>
