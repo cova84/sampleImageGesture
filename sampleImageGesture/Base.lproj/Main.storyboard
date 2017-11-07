@@ -32,7 +32,6 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="3M1-fH-JWn" appends="YES" id="g7B-RV-3hB"/>
-                                    <outletCollection property="gestureRecognizers" destination="UzM-5g-5my" appends="YES" id="qQB-jv-gUX"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tLu-NW-VeI">
@@ -41,7 +40,6 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="UJo-hH-D1M" appends="YES" id="Qt2-6Y-EOS"/>
-                                    <outletCollection property="gestureRecognizers" destination="LAQ-21-cM4" appends="YES" id="iGl-Gy-9Q5"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHV-Mx-9pd">
@@ -49,8 +47,8 @@
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.49656106211656442" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="yfV-K6-eh1" appends="YES" id="k1h-Pl-MLX"/>
-                                    <outletCollection property="gestureRecognizers" destination="w6u-mO-G2p" appends="YES" id="gsZ-lv-pXb"/>
+                                    <outletCollection property="gestureRecognizers" destination="yfV-K6-eh1" appends="YES" id="0n5-IA-0U6"/>
+                                    <outletCollection property="gestureRecognizers" destination="6uq-ci-QFM" appends="YES" id="T9J-YQ-Up3"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -77,6 +75,11 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="83f-Ce-qwx">
+                    <connections>
+                        <action selector="myImageBack:" destination="BYZ-38-t0r" id="FZq-ar-ZTV"/>
+                    </connections>
+                </tapGestureRecognizer>
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="3M1-fH-JWn">
                     <connections>
                         <action selector="myImagepinappul:" destination="BYZ-38-t0r" id="ceg-ij-plb"/>
@@ -89,17 +92,14 @@
                 </rotationGestureRecognizer>
                 <panGestureRecognizer minimumNumberOfTouches="1" id="yfV-K6-eh1">
                     <connections>
-                        <action selector="myImageapple:" destination="BYZ-38-t0r" id="FUW-2f-xLM"/>
+                        <action selector="ApplePan:" destination="BYZ-38-t0r" id="tgn-tM-TAK"/>
                     </connections>
                 </panGestureRecognizer>
-                <tapGestureRecognizer id="83f-Ce-qwx">
+                <tapGestureRecognizer id="6uq-ci-QFM">
                     <connections>
-                        <action selector="myImageBack:" destination="BYZ-38-t0r" id="FZq-ar-ZTV"/>
+                        <action selector="AppleTap:" destination="BYZ-38-t0r" id="rJH-mG-H9y"/>
                     </connections>
                 </tapGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="w6u-mO-G2p"/>
-                <pinchGestureRecognizer id="LAQ-21-cM4"/>
-                <gestureRecognizer id="UzM-5g-5my"/>
             </objects>
             <point key="canvasLocation" x="135" y="132.04225352112675"/>
         </scene>

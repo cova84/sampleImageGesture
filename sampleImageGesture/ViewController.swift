@@ -68,7 +68,25 @@ class ViewController: UIViewController {
         ))
     }
     
-    @IBAction func myImageapple(_ sender: UIPanGestureRecognizer) {
+    @IBAction func AppleTap(_ sender: UITapGestureRecognizer) {
+        let alert = UIAlertController(
+            title: "リンゴ"
+            , message: "リンゴの表面って、微妙に毛羽立ってて気持ちいいよね。"
+            , preferredStyle: .alert
+        )
+        present(
+            alert
+            , animated: true
+            , completion: {() -> Void in print("アップルが表示されました。")}
+        )
+        alert.addAction(UIAlertAction(
+            title: "OK"
+            ,style: .default
+            ,handler: {action in print("アップルのOKが押されました。")}
+        ))
+    }
+    
+    @IBAction func ApplePan(_ sender: UIPanGestureRecognizer) {
         let alert = UIAlertController(
               title: "リンゴ"
             , message: "リンゴの表面って、微妙に毛羽立ってて気持ちいいよね。"
